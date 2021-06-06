@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApplication.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication"
+        mc:Ignorable="d"
+        Title="About Amstrad CPC Sprite Manipulation Tool" 
+        Height="300" Width="400" 
+        HorizontalAlignment="Center" 
+        HorizontalContentAlignment="Center" 
+        VerticalContentAlignment="Center" 
+        VerticalAlignment="Center"
+        ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Topmost="True" 
+        SizeToContent="Height">
+    <StackPanel Margin="10">
+        <TextBlock Text="Amstrad CPC Sprite Manipulation Tool For Windows" Padding="10" HorizontalAlignment="Center" FontSize="14"/>
+        <TextBlock Padding="10" HorizontalAlignment="Center" FontSize="12">Version <Run Text="{Binding Version,Mode=OneWay}"/></TextBlock>
+        <TextBlock Text="(C)Copyright 2020 Mike Burns" Padding="10" HorizontalAlignment="Center" FontSize="12"/>
+        <Button HorizontalAlignment="Center" Margin="20" Padding="5" Click="Close_Click">Close</Button>
+    </StackPanel>
+
+</Window>
